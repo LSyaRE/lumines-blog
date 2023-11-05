@@ -9,9 +9,6 @@ image:
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 
-
-
-
 ---
 
 
