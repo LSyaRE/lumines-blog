@@ -12,6 +12,7 @@ const {pageTitle} = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
@@ -19,13 +20,155 @@ const {pageTitle} = Astro.props;
 	<body>
 		<!-- {ROUTES.map((route) => <a href={route.href}>{route.name}</a>)} -->
 		<Header />
-
-		<h1>My Astro Learning Blog</h1>
-		<slot />
+		<div class="slider">
+			<!-- list Items -->
+			<div class="list">
+				<div class="item active">
+					<img src="public/img/img1.png">
+					<div class="content text-white">
+						<p>LuminesWay</p>
+						<h2>Slider 01</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img2.jpg">
+					<div class="content text-white">
+						<p>LuminesWay</p>
+						<h2>Slider 02</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img3.jpg">
+					<div class="content text-white">
+						<p>LuminesWay</p>
+						<h2>Slider 03</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img4.jpg">
+					<div class="content text-white">
+						<p>LuminesWay</p>
+						<h2>Slider 04</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img5.jpg">
+					<div class="content text-white">
+						<p>LuminesWay</p>
+						<h2>Slider 05</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- button arrows -->
+			<div class="arrows">
+				<button id="prev">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+					</svg>
+				</button>
+				<button id="next">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+				  	</svg>
+				</button>
+			</div>
+			<!-- thumbnail -->
+			<div class="thumbnail">
+				<div class="item active">
+					<img src="public/img/img1.png">
+					<div class="content text-white">
+						Name Slider
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img2.jpg">
+					<div class="content text-white">
+						Name Slider
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img3.jpg">
+					<div class="content text-white">
+						Name Slider
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img4.jpg">
+					<div class="content text-white">
+						Name Slider
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/img/img5.jpg">
+					<div class="content text-white">
+						Name Slider
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cards -->
+		  <div>
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-4">
+					<div class="card mx-2 my-5">
+						<img src="public/img/img1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  	<h5 class="card-title">Título</h5>
+						  	<hr>
+						  	<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam non facilis, sit reiciendis aspernatur veniam! Eligendi optio architecto, est similique ad sed? Eius ducimus eos perferendis possimus sint. Sequi, blanditiis!</p><!-- lorem30 -->
+						  	<a href="#" class="btn btn-info">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="card mx-2 my-5">
+						<img src="public/img/img3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  	<h5 class="card-title">Título</h5>
+						  	<hr>
+						  	<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam non facilis, sit reiciendis aspernatur veniam! Eligendi optio architecto, est similique ad sed? Eius ducimus eos perferendis possimus sint. Sequi, blanditiis!</p><!-- lorem30 -->
+						  	<a href="#" class="btn btn-info">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 ">
+					<div class="card mx-2 my-5">
+						<img src="public/img/img4.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  	<h5 class="card-title">Título</h5>
+						  	<hr>
+						  	<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam non facilis, sit reiciendis aspernatur veniam! Eligendi optio architecto, est similique ad sed? Eius ducimus eos perferendis possimus sint. Sequi, blanditiis!</p><!-- lorem30 -->
+						  	<a href="#" class="btn btn-info">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<Footer />
 
 		<script>
 			import "../scripts/menu.js";
+			import "../scripts/app.js";
 		</script>
 	</body>
 </html>
